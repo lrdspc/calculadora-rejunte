@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Rejunte Quartzolit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Calculadora de Rejunte</h1>
+        <form>
+            <label for="tipoRejunte">Tipo de Rejunte</label>
+            <select id="tipoRejunte">
+                <option value="acrilico">Acrílico</option>
+                <option value="ceramico">Cerâmico</option>
+                <option value="porcelanato">Porcelanato</option>
+            </select>
+
+            <label for="juntaAssentamento">Junta de Assentamento (mm)</label>
+            <input type="number" id="juntaAssentamento">
+
+            <label for="ladoA">Altura do Revestimento (cm)</label>
+            <input type="number" id="ladoA">
+
+            <label for="ladoB">Largura do Revestimento (cm)</label>
+            <input type="number" id="ladoB">
+
+            <label for="area">Área Total (m²)</label>
+            <input type="number" id="area">
+
+            <button type="button" onclick="calcularConsumo()">Calcular</button>
+        </form>
+
+        <div id="resultados">
+            <h2>Resultado</h2>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
